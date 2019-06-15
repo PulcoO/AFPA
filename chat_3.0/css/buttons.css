@@ -1,0 +1,49 @@
+/* POUR INDEX */
+
+/* SIGN IN & UP WITH JS : input-submit*/
+.input-submit {
+    display: block;
+    margin: 1rem auto;
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    /* background-image: linear-gradient(-25deg,#4dbe96 35%,#40a7b0 65%); */
+    background-color: #4dbe96;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    border-radius: 2rem;
+    transition: 200ms;
+    position: relative;
+    transition: all 0.9s;
+  }
+  .input-submit:hover {
+
+    border: 1px solid #40a7b0;
+    background: #FFFFFF;
+    color: #40a7b0;
+  }
+  /* FIN SIGN IN & UP*/
+
+/* SIGN UP & IN WITH JS :toggle-log */
+.toggle-log {
+    font-size: 1rem;
+    padding: .4rem 2rem;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 2rem;
+    transition: 200ms;
+    transition: all 0.9s;
+  }
+  .toggle-log:hover {
+    background: #FFFFFF;
+    color: #40a7b0;
+  }
+  .toggle-log:focus {
+    border: 2px solid #FFFFFF;
+    outline: none;
+  }
+
+  /* FIN SIGN UP & IN WITH JS */
+
+
+

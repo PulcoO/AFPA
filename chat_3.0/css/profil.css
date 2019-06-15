@@ -1,0 +1,333 @@
+@font-face {
+	font-family: "sunrise-ok";
+	src: url(../ressources/font/sunrise.otf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div.container-un {
+
+	background-image: linear-gradient(0deg,#4dbe96 35%,#40a7b0 65%); 
+	/* display: flex; */
+	width: 70%;
+	/* flex-direction: column;
+	align-items: center;
+	justify-content: center;*/
+	padding: 1%;
+}
+h1 a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.05em;
+	font-family: "sunrise-ok";
+	font-size: 2em;
+	font-weight: 100;
+	margin-top: 60px;
+}
+
+div.profil {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	padding:9%;
+	
+}
+
+div.profil form {
+	margin-bottom:20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.profil form .input {
+	display: block;
+	margin-bottom: 20px;
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #33a8b1;
+    border-radius: 2rem;
+    transition: 200ms;
+    transition: all 0.9s;
+	outline: none;
+}
+
+div.profil form .input-btn {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: white;
+}
+div.profil form .input-btn:hover{
+	color: black;
+}
+/* ////////////////// Suppresion du bouton files ////////// */
+
+.js .input-file-container {
+	position: relative;
+	text-align: center;
+  }
+.js .input-file-trigger {
+	display: block;
+	text-decoration: none;
+	padding:10px;
+	margin-top: 20px;
+	background-image:linear-gradient(120deg, #40a7b0 0%, #4dbe96 100%);
+	border-radius: 50px;
+	-webkit-box-shadow: 32px 34px 54px -15px rgba(133,131,133,1);
+	-moz-box-shadow: 32px 34px 54px -15px rgba(133,131,133,1);
+	box-shadow: 32px 34px 54px -15px rgba(133,131,133,1);
+	color: #fff;
+	font-size: 1em;
+	transition: all .4s;
+	cursor: pointer;
+  }
+.js .input-file {
+	position: absolute;
+	top: 0; left: 0;
+	width: 225px;
+	padding: 14px 0;
+	opacity: 0;
+	cursor: pointer;
+  }
+   
+  /* quelques styles d'interactions
+  .js .input-file:hover + .input-file-trigger,
+  .js .input-file:focus + .input-file-trigger,,
+  .js .input-file-trigger:focus*/
+  .js .input-file-trigger:hover{
+	background-image:linear-gradient(120deg, #40a7b0 0%, #4dbe96 100%);
+	transform: scale(1.05);
+	color: white;
+  }
+   
+  /* styles du retour visuel */
+  .file-return {
+	margin: 0;
+  }
+  .file-return:not(:empty) {
+	margin: 1em 0;
+  }
+  .js .file-return {
+	font-style: italic;
+	font-size: .9em;
+	font-weight: bold;
+	text-align: center
+  }
+  /* on complète l'information d'un contenu textuel
+	 uniquement lorsque le paragraphe n'est pas vide */
+  .js .file-return:not(:empty):before {
+	content: "";
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+  }
+/* ///////////////// Fin modification du button //////////////////// */
+#enregistrer{
+	text-transform: uppercase;
+	-webkit-box-shadow: 9px 11px 29px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 11px 29px -12px rgba(0,0,0,0.75);
+	box-shadow: 9px 11px 29px -12px rgba(0,0,0,0.75);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+
+#enregistrer:hover {
+	-webkit-box-shadow: 0px 3px 43px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 43px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 43px -2px rgba(0,0,0,0.75);
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	color: #4dbe96;
+}
+
+
+div.container-deux {
+	display: flex;
+	width: 30%;
+	background-color: #fff;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* padding-top: 10%;
+	padding-bottom: 10%; */
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height:200px;
+    border: 10px solid #40a7b0;
+    border-radius: 50%;
+    overflow: hidden;
+	margin-bottom:50px
+}
+
+img {
+	width: 150px;
+	height:150px;
+	border-radius:50%;
+}
+
+
+div.container-deux input {
+	font-weight: bold;
+	width: 165px;
+	height:35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	color: #40a7b0;
+	margin-top: 15px;
+	font-weight:300;
+	text-decoration: none;
+}
+
+div.container-deux form input.choisir {
+
+	background-image:none;
+	margin-left:30px;
+}
+
+#fichier {
+	background: transparent;
+}
+
+
+.chat-deco {
+	margin-top:20%;
+}
+
+div.container-deux a.chat {
+	text-decoration: none;
+	padding:10px;
+	margin-top: 20px;
+	color:#fff;
+	background-image:linear-gradient(120deg, #40a7b0 0%, #4dbe96 100%);
+	border-radius: 50px;
+	-webkit-box-shadow: 32px 34px 54px -15px rgba(133,131,133,1);
+	-moz-box-shadow: 32px 34px 54px -15px rgba(133,131,133,1);
+	box-shadow: 32px 34px 54px -15px rgba(133,131,133,1);
+/*	width:55%;*/
+	
+}
+
+.chat-deco {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.chat {
+	-webkit-box-shadow: 0px 3px 43px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 43px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 43px -2px rgba(0,0,0,0.75);
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+.chat:hover {
+	transform: scale(1.05);
+}
+
+div.container-deux a.deco {
+	color: #40a7b0;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 620px) {
+	body {
+		height: 100%;
+        flex-direction: column-reverse;
+	}
+	.container-un {
+		width: 100% !important;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	div.profil form .input-btn {
+		background-color: transparent;
+		outline: none;
+		border: none;
+		color: white;
+	}
+	div.profil form .input-btn:hover{
+		color: black;
+	}
+
+
+	.container-deux {
+		flex-direction: column-reverse !important;
+		width: 70% !important;
+		margin-bottom: 5px;
+	}
+
+	.chat-deco {
+		margin-top: 0;
+	}
+
+	.photo {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+        width: 80px;
+		height: 80px;
+		margin-top: 10px;
+		margin-bottom: 0;
+    }
+
+    img {
+        width: 80px;
+        height:80px;
+	}
+
+	.file-return {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

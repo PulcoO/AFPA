@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link CSS-->
+    <link rel="stylesheet" href="style\index.css">
+    <!-- Link Import -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,400i,500,500i,600,600i&display=swap" rel="stylesheet">
+    <!-- Titre -->
+    <title>CV</title>
+    <!-- Application Style PAGE -->
+    <style type="text/css">a:link{text-decoration:none}</style>
+
+</head>
+
+<body>
+    <div class="wrapper" id="home">
+        <video autoplay playsinline muted loop preload poster="http://i.imgur.com/xHO6DbC.png">
+        <source src="image\A0450_1507_H3_807_1163_Videvo.mp4" />
+        </video>
+        <img src="image\developpeur-fond-video.png" alt="">
+    </div>
+
+    <header class="header" >
+            <div class="nav-wrapper">
+    
+                <div class="logo-container">
+                        <img class="logo" src="image\photo-profil.jpg" alt="Logo">
+                </div>
+                <nav class="navbar">
+                    <input class="hidden" type="checkbox" id="menuToggle">
+                    <label class="menu-btn" for="menuToggle">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </label>
+    
+                    <div class="nav-container">
+                        <ul class="nav-tabs">
+                            <li><a class="nav-tab" href="#home">Home</a></li>
+                            <li><a class="nav-tab" href="#profil">Profil</a></li>
+                            <li><a class="nav-tab" href="#competences">Compétences</a></li>
+                            <li><a class="nav-tab" href="#mainContentTime">Expérience</a></li>
+                            <li><a class="nav-tab" href="#footer">Contact</a></li>
+                        </ul>  
+                    </div>
+                </nav>  
+            </div>
+    </header>
+
+    <div class="sectionSeparator"></div>
+
+<!-- /////////////////// Profil avec Particules en Fond //////////////////////////// -->
+    
+    <section class="particules-profil" id="profil">
+        <h2>Profil_</h2>
+        <div class="particules-container">
+            
+            <!-- particles.js container --> 
+            <div id="particles-js"></div> 
+            <div class="profil-photo">
+                
+            </div>
+            <div class="profil">
+                       
+                    <h3>Mathieu Veys</h3>
+                <p>Geek et passionné par les nouvelles Techs. J'ai pour projet de ne plus seulement les utiliser mais également de les modeler.</p>       
+            </div> 
+        </div>
+    </section>                
+       
+    <div class="sectionSeparator"></div>
+
+    <!-- ///////////////////////////////// Button competences ///////////////////////////// -->
+    <section class="container_competences">
+            <h2>Compétences_</h2>
+    
+        <section class="buttons-competences" id="competences">
+            <div class="section-buttons" > <p></p>
+                
+                <button class="btn" id="btn-all">Tout</button>
+                <!-- <span class="ligne" id="span2"></span> -->
+                <button class="btn" id="btn-generales">Generales</button>
+                <!-- <span class="ligne"id="span1"></span> -->
+                <button class="btn" id="btn-languages">Languages</button>
+                <!-- <span class="ligne" id="span3"></span> -->
+                <button class="btn" id="btn-outils">Outils</button>
+                <!-- <span class="ligne" id="span4"></span> -->
+                <button class="btn" id="btn-frameworks">Frameworks</button>
+
+            </div>
+        </section>            
+
+<!-- ///////////////////////////////// Debut tableau de Comp ///////////////////////////// -->
+            
+        <section class="mainContentCompetences">
+            
+    <!--///////////////////////////////////// HTML /////////////////////////////////////-->
+            <!-- <div class="background"> -->
+            <div class="icone icone-second icone-languages" >   
+                <img src="image\icone\html.png"alt="icone HTML"/>  
+                <div class="mask">  
+                    <h3>HTML</h3>  
+                    <article class="separator"></article>
+                    <p>description</p>  
+                    <button id="btnHTML" class="btn">More</button>
+                </div>  
+            </div>  
+
+            <!-- The Modal -->
+            <div id="modalHTML" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="image"><img src="" alt="certif"></div>
+                </div>
+            </div>
+
+    <!--///////////////////////////////////// CSS ///////////////////////////////////// -->
+
+            <div class="icone icone-second icone-languages" >
+                <img src="image\icone\css.png" alt="icone CSS">
+                <div class="mask">
+                    <h3>CSS</h3>
+                    <article class="separator"></article>
+                    <p>description</p>  
+                        <button id="btnCSS" class="btn">More</button>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modalCSS" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="" alt="certif">
+                </div>
+            </div>
+                    
+    <!--///////////////////////////////////// PHP /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-languages">
+                <img src="image\icone\php.png" alt="icone PHP">
+                <div class="mask">
+                    <h3>PHP</h3>
+                    <article class="separator"></article>
+                    <p>description</p>  
+                        <button id="btnPHP" class="btn">More</button>
+                </div>
+            </div>
+            
+            <!-- The Modal -->
+            <div id="modalPHP" class="modal">
+            
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="" alt="certif">
+                </div>
+            </div>
+
+    <!--///////////////////////////////////// JavaScript /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-languages">
+                <img src="image\icone\JavaScript.png" alt="icone JS">
+                <div class="mask">
+                    <h3>JavaScript</h3>
+                    <article class="separator"></article>
+                    <p>ES5-ES6</p>  
+                        <button id="btnJS" class="btn">More</button>
+                </div>
+            </div>
+        
+            <!-- The Modal -->
+            <div id="modalJS" class="modal">
+        
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="" alt="certif">
+                </div>
+            </div>
+
+    <!-- ///////////////////////////////////// Java ///////////////////////////////////// -->
+
+            <div class="icone icone-second icone-languages">
+                <img src="image\icone\java.png" alt="icone Java">
+                <div class="mask">
+                    <h3>Java</h3>
+                    <article class="separator"></article>
+                    <p>Niveau débutant</p>  
+                        <button id="btnJAVA" class="btn">More</button>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modalJAVA" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="" alt="certif">
+                </div>
+            </div>
+
+    <!-- ///////////////////////////////////// SQL /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-languages">
+                <img src="image\icone\sql.png" alt="icone SQL">
+                <div class="mask">
+                    <h3>SQL</h3>
+                    <article class="separator"></article>
+                    <p>Communication BDD</p>  
+                        <button id="btnSQL" class="btn">More</button>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modalSQL" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="" alt="certif">
+                </div>
+            </div>
+
+            <!-- Ici Mettre un ligne de sparation -->
+
+            <div class="separator"></div>
+
+    <!--///////////////////////////////////// J.Query /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-frameworks">
+                <img src="image\icone\jquery.png" alt="icone JQUERY">
+                <div class="mask">
+                    <h3>J.Query</h3>
+                    <article class="separator"></article>
+                    <p>Librairie JavaScript, connaissance.</p>  
+                        <button id="btnQUERY" class="btn">More</button>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modalQUERY" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="" alt="certif">
+                </div>
+            </div>
+
+    <!--///////////////////////////////////// Bootstrap /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-outils">
+                <img src="image\icone\bootstrap.png" alt="icone Bootstrap">
+                <div class="mask">
+                    <h3>Bootstrap</h3>
+                    <article class="separator"></article>
+                    <p>Confirmé.</p>  
+                
+                </div>
+            </div>
+            <!-- Ici Mettre un ligne de sparation -->
+
+            <div class="separator"></div>
+
+    <!--///////////////////////////////////// Atom /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-outils">
+                <img src="image/icone/Atom.png" alt="icone ATOM">
+                <div class="mask">
+                    <h3>Atom</h3>
+                    <article class="separator"></article>
+                    <p>Bonne utilisation de l'outil.</p>  
+                        
+                </div>
+            </div>
+    <!--///////////////////////////////////// COMMANDER /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-outils">
+                <img src="image\icone\cmder.png" alt="icone COMMANDER">
+                <div class="mask">
+                    <h3>COMMANDER</h3>
+                    <article class="separator"></article>
+                    <p>Bonne utilisation de l'outil.</p>  
+                        
+                </div>
+            </div>
+    <!--///////////////////////////////////// Sublime Text /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-outils">
+                <img src="image/icone/sublime.png" alt="icone SUBLIME">
+                <div class="mask">
+                    <h3>SUBLIME</h3>
+                    <article class="separator"></article>
+                    <p>Bonne utilisation de l'outil.</p>  
+                        
+                </div>
+            </div>
+    <!--///////////////////////////////////// VISUAL STUDIO CODE /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-outils">
+                <img src="image/icone/vsc.png" alt="icone VSC">
+                <div class="mask">
+                    <h3>VsC</h3>
+                    <article class="separator"></article>
+                    <p>Bonne utilisation de l'outil.</p>  
+                        
+                </div>
+            </div>
+    <!--///////////////////////////////////// GIT GITHUB /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-outils">
+                <img src="image/icone/git.png" alt="icone VSC">
+                <div class="mask">
+                    <h3>GIT</h3>
+                    <article class="separator"></article>
+                    <p>Bonne utilisation de l'outil.</p>  
+
+                </div>
+            </div>
+
+
+
+            <!-- Ici Mettre un ligne de sparation -->
+
+            <div class="separator"></div>
+
+    <!--///////////////////////////////////// Methode Agile /////////////////////////////////////-->
+
+            <div class="icone icone-second icone-generales">
+                <img src="image/icone/agile.png" alt="icone AGILE">
+                <div class="mask">
+                    <h3>AGILE</h3>
+                    <article class="separator"></article>
+                    <p>Bonne compréhension de la méthode.</p>  
+                        
+                </div>
+            </div>
+
+        <!-- </div> -->
+        </section>
+    </section>
+
+    <div class="sectionSeparator"></div>
+<!--///////////////////////////////////// Fin Compétences /////////////////////////////////////-->
+            
+    <section class="mainContentTime" id="mainContentTime">
+        <h2>Expérience_</h2>
+        
+        <div class="contenerTimeImpaire">
+            <div class="imgTime imgTimeImpaire"id="imgTimeA">
+                <img src="image\fullstack_mini.png" alt="Full Stack">
+            </div>
+            <div class="textTime textTimeImpaire" id="textTimeA">
+                <h3>Formation Full Stack</h3>
+                <h4>Mai 2019</h4>
+                <p>Chez AFPA / ASTON</p>
+                <p>Formation initiant une réorientation professionnelle. Ayant débuté quelque temps avant mon entrée en formation sur Java, le premier mois de la formation chez l'AFPA a largement consolidé mon choix.</p>
+            </div>
+        </div>
+
+        <div class="contenerTimePaire">
+            <div class="textTime textTimePaire" id="textTimeB">
+                <h3>Professeur d'histoire géographie & Francais</h3>
+                <h4>2013 - 2015</h4>
+                <p>Poste d'assistant, primo arrivant lors de la création du poste, à la création du Collège.CDD, temps plein. Ma capacité d'écoute, de travailer en équipe, et ma pédagogie, ainsi que ma résilience face à un environnement hostile, s'en sont trouvé renforcer. </p>
+            </div>
+            <div class="imgTime imgTimePaire"id="imgTimeB">
+                <img src="image\rogue.png" alt="dumbeldore">
+            </div>
+        </div>
+
+        <div class="contenerTimeImpaire">
+            <div class="imgTime imgTimeImpaire"id="imgTimeC">
+                <img src="image\mec-super-caissier.webp" alt="caisse automatique">
+            </div>
+            <div class="textTime textTimeImpaire" id="textTimeC">
+                <h3>Conseiller Vente & Hôte de Caisse</h3>
+                <h4>2013 - 2015</h4>
+                <p>CDD d’une durée de 1 mois, dans lequel j’ai rempli la fonction de conseiller vente au sein du magasin FNAC Lille. Décembre 2014. Encaissement des achats. CDI à mi-temps au sein de l'entreprise Carrefour, en tant qu'hôte de caisse. Tenue et gestion de caisse, services clientèle.
+                    </p>
+            </div>
+        </div>
+
+        <div class="contenerTimePaire">
+            <div class="textTime textTimePaire" id="textTimeD">
+                <h3>Assistant d'éducation & Assistant social</h3>
+                <h4>2011 - 2012</h4>
+                <p>CDD à mi-temps au sein de L' éducation Nationale, en tant que suppléant de l'assistante sociale du collège & assistant d'éducation du collège de Wazemme à Lille.</p>
+            </div>
+            <div class="imgTime imgTimePaire"id="imgTimeD">
+                <img src="image\pion-venere.png" alt="pion d'échec">
+            </div>
+        </div>
+
+        <div class="contenerTimeImpaire">
+            <div class="imgTime imgTimeImpaire" id="imgTimeE">
+                <img src="image\macdonald.png" alt="logo mac do">
+            </div>
+            <div class="textTime textTimeImpaire" id="textTimeE">
+                <h3>Employé polyvalent</h3>
+                <h4>2008 - 2011</h4>
+                <p>CDI en 3/4 temps, au sein de McDonald's Lille. Tenue de caisse, gestion de cuisine, confection de plats, nettoyage des locaux, gestion d'inventaire.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+
+
+
+    </section>    
+    
+    <footer id="footer">
+        <div class="information">
+            <li><i class="fas fa-user-secret"></i>Mathieu Veys</li>
+            <li><i class="fas fa-mobile-alt"></i>Tel : <a href="tel:+33668320471">0668320471</a> </li>
+            <li><i class="fas fa-paper-plane"></i>Mail :<a href="mailto:oominimathoo@gmail.com">oominimathoo@gmail.com</a></li>
+            <span class="separator"></span>
+            
+            <div id="container-button-form">
+                <button class="send-message">
+                    <div class="circle">
+                        <span class="icon arrow"></span>
+                    </div>
+                    <p class="button-text" id="btnFORMULAIRE">Envoyez moi un message :</p>
+                </button>
+                <span class="sayHi">Say hi !</span>
+            </div>
+            
+            <span class="separator"></span>
+            <li><i class="fas fa-code"></i>CodePen</li>
+            <li><i class="fas fa-code"></i>GitHub</li>
+            <li><i class="fab fa-facebook-square"></i>Facebook</li>
+            <li><i class="fab fa-linkedin"></i>Linkedin</li>
+        </div>
+
+        <div class="formulaire">
+
+            <fieldset class="block"> 
+
+                <form action="php\formulaire.php" method="POST">
+
+                    <input class="input-nom" type="text" name="nom" placeholder="Votre nom" required/>
+            
+                    <input class="input-prenom"type="text" name="prenom" placeholder="Votre prénom" required/>
+            
+                    <input class="input-email" type="email" name="mail" placeholder="Votre e-mail" required/>
+
+                    <input class="input-message" id="textarea" type="textarea" name="message" placeholder="Votre message" size="8,20" required/>
+            
+                    <input class="input-submit" type="submit" value="Envoyer"/>
+
+                    <!-- <span class="">Thank you !</span> -->
+            
+                </form>
+
+            </fieldset>
+        </div>
+        
+    </footer>
+        <!-- script -->
+        <script src="js\index.js"></script>
+        <script src="js\formulaire.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <!-- CANVAS PARTICULES -->
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    
+        <!-- particules.js local -->
+        <script src="js\particles.js"></script>
+
+        <!-- SCROLL REVEAL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js\scrollReveal.js"></script>
+
+        <!-- PANEL DE PROJET -->
+        <script src="js/util.js"></script>
+
+        <!-- HEADER TRANSFORM SCROLL FUNCTION -->
+        <!-- <script src="js\header.js"></script> -->
+        
+        <!-- <script src="js\modernizr.custom.js"></script>
+        <script src="js\waypoints.min.js"></script> -->
+        <!-- FORMULAIRE JS -->
+        <script src="js\formulaire.js"></script>
+        
+        
+</body>
+
+</html>
