@@ -89,7 +89,7 @@ for (var i = 0; i < buttons.length; i++) { // for
       // Page compétences // ne fonctionne pas ! changer de function pour plus de visibilité et changer en jquery selector
     }else if ((buttonsId == "btn-all") || (buttonsId == "p-all") || (buttonsId == "btn-generales") || (buttonsId == "p-generales") || (buttonsId == "btn-languages") || (buttonsId == "p-languages") || (buttonsId == "btn-outils") || (buttonsId == "p-outils") || (buttonsId == "btn-frameworks") || (buttonsId == "p-frameworks")){
 
-      console.log("ta mère !");
+      console.log("actif done");
       $(".btn").removeClass("active");
       $(this).addClass("active");
 
