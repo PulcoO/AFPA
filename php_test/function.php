@@ -345,3 +345,75 @@ function lettreMotOccurence($letter,$string)
 function rechercheDisctionnaire ($word){
 
 }
+
+///////////////////////////  function str to upper per line /////////////////////
+function str_to_upper_per_line ($str){
+    if (strlen ($str) == 0){
+        echo "error";
+    }else{
+        for ($i =0; $i< strlen($str); $i++){
+            echo (strtoupper($str[$i]) . "<br>");
+        }
+    }
+}
+//////////////////////////// function afficher les deux pair after //////////////
+function two_pair_after($int){
+    $arraypair = Array (2);
+    if (($int % 2) == 0){
+        $arraypair[0] = $int +2;
+        $arraypair[1] = $int +4;
+        return $arraypair;
+    }else{
+        $arraypair[0] = $int +1;
+        $arraypair[1] = $int +3;
+        return $arraypair;
+    }
+}
+//////////////////////////////// max_integer_uneven_index ///////////////////////
+function max_integer_uneven_index ($arrayOfInt){
+    if ((count($arrayOfInt)) == 0){
+        return " Error ! Votre tableau est vide ! ";
+    }else{
+        $max = $arrayOfInt[1];
+        for ($i=3;$i<count($arrayOfInt);$i+=2){
+            if ($arrayOfInt[$i]> $max){
+                $max = $arrayOfInt;
+            }
+        }    
+    }
+    return $max;
+}
+/////////////////////////// multiplication_of_two_integer ////////////////////////
+function multiplication_of_2_integer ($intA,$intB){
+    $resultat = 0;
+
+    if (($intA == 0) || ($intB == 0)){
+        return $resultat;
+    }else{
+        for ($i=0; $i<abs($intA); $i++){
+            $resultat += abs($intB);  
+        }
+    }
+
+    if (($intA < 0) || ($intB < 0)){
+        $resultat = -($resultat);
+        return $resultat;
+    }else{
+        return $resultat;
+    }
+    
+}
+///////////////////////// occurence bool dans tableau bool //////////////////////
+function occurence_bool_in_array_of_bool ($arrayOfBool, $bool){
+    $cpt = 0;
+    if (count($arrayOfBool) == 0){
+        return "votre tableau est vide";
+    }else{
+        for ($i=0; $i<count($arrayOfBool); $i++){
+            if ($arrayOfBool[$i] == $bool){
+                $cpt ++;
+            }
+        }
+        return "Votre tableau de boolèen contient" . " " . $cpt . " " . "fois, la valeur boolèene" . " " . (($bool)?'true':'false') . ".";
+    }
+}

@@ -19,3 +19,9 @@ $string = "bbcaaaaaaaaaaaa";
 //echo nombreOccurences($letter,$string,$cpt);
 $occ=lettreMotOccurence($letter,$string);
 echo "Lettre trouvée ".$occ." fois";
+
+str_to_upper_per_line("aBc");
+print_r(two_pair_after(5));
+echo max_integer_uneven_index([5,1,6]);
+echo multiplication_of_2_integer(5,4);
+echo occurence_bool_in_array_of_bool([true,false,true], true);
