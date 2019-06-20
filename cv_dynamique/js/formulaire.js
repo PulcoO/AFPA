@@ -21,14 +21,6 @@ $(document).ready(function(){
     $('send-message').css ({'display':'none'});
     $('.sayHi').fadeIn(3000);
     $('.formulaire fieldset').animate({
-      right: '-200px',
-      opacity: '0.5' 
-    }, "slow");
-    $('.formulaire fieldset').animate({
-      right: '-100px',
-      opacity: '0.8' 
-    }, "slow");
-    $('.formulaire fieldset').animate({
       right: '0px',
       opacity: '1' 
     }, "slow");
@@ -41,8 +33,6 @@ $(document).ready(function(){
     console.log("le buttton fonctionne bien");
     fieldset.attr('disabled', 'disable');
     $('formulaire fieldset')
-
-
   })
 });
 

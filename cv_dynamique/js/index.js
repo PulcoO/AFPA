@@ -1,3 +1,5 @@
+/////////////////////////// Scroll ancrage //////////////////////////////
+		// ne fonctionne pas grrrrrrrr
 ////////////////////////// Animate Icones //////////////////////////////
 
 function AnimateIcones(buttonsId){
@@ -85,6 +87,18 @@ for (var i = 0; i < buttons.length; i++) { // for
       modal.style.display = "block";
     }else if (buttonsId == "btnPHP"){
       modal = document.getElementById("modalPHP");
+      modal.style.display = "block";
+    }else if (buttonsId == "btnJS"){
+      modal = document.getElementById("modalJS");
+      modal.style.display = "block";
+    }else if (buttonsId == "btnJAVA"){
+      modal = document.getElementById("modalJAVA");
+      modal.style.display = "block";
+    }else if (buttonsId == "btnSQL"){
+      modal = document.getElementById("modalSQL");
+      modal.style.display = "block";
+    }else if (buttonsId == "btnQUERY"){
+      modal = document.getElementById("modalQUERY");
       modal.style.display = "block";
       // Page compétences // ne fonctionne pas ! changer de function pour plus de visibilité et changer en jquery selector
     }else if ((buttonsId == "btn-all") || (buttonsId == "p-all") || (buttonsId == "btn-generales") || (buttonsId == "p-generales") || (buttonsId == "btn-languages") || (buttonsId == "p-languages") || (buttonsId == "btn-outils") || (buttonsId == "p-outils") || (buttonsId == "btn-frameworks") || (buttonsId == "p-frameworks")){

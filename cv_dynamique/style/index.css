@@ -171,7 +171,7 @@ header{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background:rgba(255, 195, 0, 0.7);
+		background:rgba(255, 195, 0, 1);
     }
     .nav-tabs {
 		flex-direction: column;
@@ -335,6 +335,13 @@ canvas{
         
     }
 }
+@media screen and (max-width: 600px){
+    .profil {
+        width: 100%;
+        height: 100%;
+        right: 0px;
+    }
+}
 .profil-photo{
     position: absolute;
     top:35.5vh;
@@ -386,11 +393,14 @@ canvas{
         max-width:100%;
         width: 100%;
     }
+     .section-buttons .btn{
+        font-size: 0.7em;
+    }
 }
 .section-buttons .btn{
     width: 15%;
     background-color: #ffffff;
-    padding: 2% 8% 2% 8%;
+    padding: 1.5% 8% 1.5% 8%;
     cursor: pointer;
     border: 1px solid rgba(170, 162, 162, 0.5);
     border-radius:2rem;
@@ -445,6 +455,7 @@ canvas{
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    align-content: flex-start;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -751,15 +762,21 @@ footer{
 
     background-color: rgba(254, 216, 65, 1);
 
-    border-top: solid 1px black;
-
-    font-size: 15px;
+    font-size: 1em;
 
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
 }
+@media only screen and (max-width: 800px){
+    .formulaire {
+     display: none;
+    }
+    .send-message {
+        display: none;
+    }
+} 
     footer .information{
         max-width: 50%;
         max-height: 100%;
@@ -769,16 +786,25 @@ footer{
         display: flex;
         flex-direction: column;
         align-content: center;
-        
-
     }
+    @media only screen and (max-width: 800px){
+        footer .information{
+            width: 100%;
+        }
+    } 
         footer .information .separator{
-            height: 2px;
+            height: 3px;
             max-width: 70%;
             background-color: #444;
             margin-top: 8%;
             margin-bottom: 8%;
+            
         }
+        @media only screen and (max-width: 800px){
+            footer .information .separator{
+                display: none;
+            }
+        } 
         footer .information li{
             display: flex;
             align-content: flex-start;
@@ -801,6 +827,11 @@ footer{
             align-content: center;
             grid-column: 2;
         }
+        @media only screen and (max-width: 800px){
+            #container-button-form {
+                display: none;
+            }
+        } 
         button.send-message {
             position: relative;
             display: inline-block;
@@ -884,8 +915,8 @@ footer{
             display:none;
             color: #444;
             padding: 0;
-            font-weight: 700;
-            line-height: 1.6;
+            font-weight: 1200;
+            font-size: 2.0;
             text-align: center;
             text-transform: uppercase;
             
@@ -895,14 +926,14 @@ footer{
         max-width: 50%;
         max-height: 100%;
         height: 100%;
-        width: 35%;
+        width: 40%;
         
     }
     footer .formulaire fieldset{
         opacity: 0;
         right: -450px;
-        background-color:rgba(68,68,76, 0.8);;
-        border-radius: 20%;
+        background-color: #ffffff;
+        border-radius: 2rem;
         border: transparent;
     }
     footer div form{
@@ -945,7 +976,7 @@ footer{
             font-size: 1rem;
             padding: .5rem 2rem;
             background-color: #ffffff;
-            border: 1px solid transparent;
+            border: 1px solid #444;
             color: #444;
             border-radius: 2rem;
             transition: 200ms;
@@ -956,7 +987,7 @@ footer{
         
             border: 1px solid transparent;
             background: #444;
-            color: rgb(254, 216, 65)
+            color: rgb(254, 216, 65);
           }
           button, input[type='submit'] {
             font-family: inherit;

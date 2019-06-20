@@ -21,7 +21,7 @@
 
 <body>
     <div class="wrapper" id="home">
-        <video autoplay playsinline muted loop preload poster="http://i.imgur.com/xHO6DbC.png">
+        <video autoplay playsinline muted loop preload poster="">
         <source src="image\A0450_1507_H3_807_1163_Videvo.mp4" />
         </video>
         <img src="image\developpeur-fond-video.png" alt="">
@@ -31,7 +31,7 @@
             <div class="nav-wrapper">
     
                 <div class="logo-container">
-                        <img class="logo" src="image\photo-profil.jpg" alt="Logo">
+                        <img class="logo" src="" alt="">
                 </div>
                 <nav class="navbar">
                     <input class="hidden" type="checkbox" id="menuToggle">
@@ -43,11 +43,11 @@
     
                     <div class="nav-container">
                         <ul class="nav-tabs">
-                            <li><a class="nav-tab" href="#home">Home</a></li>
-                            <li><a class="nav-tab" href="#profil">Profil</a></li>
-                            <li><a class="nav-tab" href="#competences">Compétences</a></li>
-                            <li><a class="nav-tab" href="#mainContentTime">Expérience</a></li>
-                            <li><a class="nav-tab" href="#footer">Contact</a></li>
+                            <li><a class="nav-tab js-scrollTo" href="#home">Home</a></li>
+                            <li><a class="nav-tab js-scrollTo" href="#profil">Profil</a></li>
+                            <li><a class="nav-tab js-scrollTo" href="#competences">Compétences</a></li>
+                            <li><a class="nav-tab js-scrollTo" href="#mainContentTime">Expérience</a></li>
+                            <li><a class="nav-tab js-scrollTo" href="#footer">Contact</a></li>
                         </ul>  
                     </div>
                 </nav>  
@@ -69,8 +69,10 @@
             </div>
             <div class="profil">
                        
-                    <h3>Mathieu Veys</h3>
-                <p>Geek et passionné par les nouvelles Techs. J'ai pour projet de ne plus seulement les utiliser mais également de les modeler.</p>       
+                <h3>Mathieu Veys</h3>
+                <p>Geek et passionné par les nouvelles Techs. J'ai pour projet de ne plus seulement les utiliser mais également de les modeler.</p>
+                <p>D'une filiaire plus littéraire, j'était il y a peu encore, professeur d'histoire géographie.</p>
+                </p>    
             </div> 
         </div>
     </section>                
@@ -86,7 +88,7 @@
                 
                 <button class="btn" id="btn-all">Tout</button>
                 <!-- <span class="ligne" id="span2"></span> -->
-                <button class="btn" id="btn-generales">Generales</button>
+                <button class="btn" id="btn-generales">General</button>
                 <!-- <span class="ligne"id="span1"></span> -->
                 <button class="btn" id="btn-languages">Languages</button>
                 <!-- <span class="ligne" id="span3"></span> -->
@@ -108,7 +110,7 @@
                 <div class="mask">  
                     <h3>HTML</h3>  
                     <article class="separator"></article>
-                    <p>description</p>  
+                    <p>Confirmé</p>  
                     <button id="btnHTML" class="btn">More</button>
                 </div>  
             </div>  
@@ -130,7 +132,7 @@
                 <div class="mask">
                     <h3>CSS</h3>
                     <article class="separator"></article>
-                    <p>description</p>  
+                    <p>Niveau moyen</p>  
                         <button id="btnCSS" class="btn">More</button>
                 </div>
             </div>
@@ -152,7 +154,7 @@
                 <div class="mask">
                     <h3>PHP</h3>
                     <article class="separator"></article>
-                    <p>description</p>  
+                    <p>Débutant</p>  
                         <button id="btnPHP" class="btn">More</button>
                 </div>
             </div>
@@ -218,7 +220,7 @@
                 <div class="mask">
                     <h3>SQL</h3>
                     <article class="separator"></article>
-                    <p>Communication BDD</p>  
+                    <p>Niveau Débutant</p>  
                         <button id="btnSQL" class="btn">More</button>
                 </div>
             </div>
@@ -244,7 +246,7 @@
                 <div class="mask">
                     <h3>J.Query</h3>
                     <article class="separator"></article>
-                    <p>Librairie JavaScript, connaissance.</p>  
+                    <p>Bonne connaissance de la librairie</p>  
                         <button id="btnQUERY" class="btn">More</button>
                 </div>
             </div>
@@ -312,9 +314,9 @@
             <div class="icone icone-second icone-outils">
                 <img src="image/icone/vsc.png" alt="icone VSC">
                 <div class="mask">
-                    <h3>VsC</h3>
+                    <h3>&#9825;VsC&#9825;</h3>
                     <article class="separator"></article>
-                    <p>Bonne utilisation de l'outil.</p>  
+                    <p>Bonne utilisation de l'outil</p>  
                         
                 </div>
             </div>
@@ -440,8 +442,8 @@
             </div>
             
             <span class="separator"></span>
-            <li><i class="fas fa-code"></i>CodePen</li>
-            <li><i class="fas fa-code"></i>GitHub</li>
+            <li><i class="fas fa-code"></i><a href="https://codepen.io/PulcoOx/" target="_blank" >CodePen</a> </li>
+            <li><i class="fas fa-code"></i><a href="https://github.com/PulcoO" target="_blank">GitHub</a> </li>
             <li><i class="fab fa-facebook-square"></i>Facebook</li>
             <li><i class="fab fa-linkedin"></i>Linkedin</li>
         </div>
